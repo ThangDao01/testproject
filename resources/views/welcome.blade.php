@@ -574,6 +574,14 @@
             console.log("Kí tự max là " + max + " Lặp lại " + string[i] + " lần");
         }
     }
+    var str = 'xin  chao manh'
+    function reverseStr(a){
+        var string = "";
+        for(i = a.length - 1 ; i >= 0 ; i-- ){
+            string = a.split(a[i]).reverse().join('')
+        }return string
+    }
+        console.log(reverseStr(str))
 </script>
 </body>
 </html>

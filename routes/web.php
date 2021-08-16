@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DataController;
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,7 +23,7 @@ Route::get('/admin/data-support', function () {
     return view('admin.data.list');
 });
 
-Route::get('/admin/data-support/create', [DataController::class,'createView']);
-Route::post('/admin/data-support/create', [DataController::class,'create']);
-Route::get('/admin/data-support/result', [DataController::class,'testSeed']);
+Route::get('/admin/data-support/create', [MainController::class,'createView']);
+Route::post('/admin/data-support/create', [MainController::class,'create']);
+Route::get('/admin/data-support/result', [MainController::class,'testSeed']);
 

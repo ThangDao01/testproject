@@ -30,7 +30,7 @@ class DataSupportRequest extends FormRequest
             'voice_vi' => 'required',
             'voice_en' => 'required',
             'images' => 'required',
-            'key' => 'required',
+            'key' => 'required'
         ];
     }
 }

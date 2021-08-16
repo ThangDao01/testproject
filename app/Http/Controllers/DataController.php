@@ -45,9 +45,8 @@ class DataController extends Controller
     public function create(DataSupportRequest $request)
     {
         //
-        return view('admin.data.create');
 
-        $request->validated();
+//        $request->validated();
         $obj = new DataSupport();
         $obj->values = $request->get('values');
         $obj->words_vi = $request->get('words_vi');
@@ -60,6 +59,7 @@ class DataController extends Controller
         $obj->created_at = Carbon::now();
         $obj->updated_at = Carbon::now();
         Session::put('dataSupport', $obj);
+        return view('admin.data.create');
     }
 
     /**
